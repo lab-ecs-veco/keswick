@@ -25,7 +25,7 @@ apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachine
 metadata:
   name: ec-worker
-  namespace: ec-system
+  namespace: default
 spec:
   className: best-effort-ec-small
   imageName: ec-wrkr.ova
