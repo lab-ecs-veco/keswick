@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   containers:
-  - image: busybox
+  - image: docker.io/busybox
     command:
       - sleep
       - "36000000"
