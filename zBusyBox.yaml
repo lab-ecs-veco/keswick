@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - image: docker.io/busybox
-    command
+    command:
       - sleep
       - "36000000"
     imagePullPolicy: IfNotPresent
