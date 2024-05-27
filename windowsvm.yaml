@@ -9,7 +9,7 @@ metadata:
 spec:
   className: best-effort-xsmall
   #http or https location of OVA without the prefix:
-  imageName: http://10.221.124.112/Windows-testVm.ova
+  imageName: 10.221.124.112/Windows-testVm.ova
   powerState: poweredOn
   networkInterfaces:
   - networkName: "VM Network"
