@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: nginx-helloworld
-        image: alanrenouf/docker-nginx-hello-keswick
+        image: public.ecr.aws/n5b2p5h6/ecs-docker-local/ecs-local-dev:1.17.3
         ports:
         - containerPort: 80
 ---
