@@ -63,9 +63,10 @@ spec:
   ports:
     - port: 80
       targetPort: 9090
+      nodePort: 32755
   selector:
     k8s-app: kubernetes-dashboard
-  type: LoadBalancer
+  type: NodePort
 
 ---
 
