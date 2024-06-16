@@ -8,5 +8,5 @@ spec:
     # enable
     enabled: true
     metrics-sink:
-      url: "http://172.16.204.82:30777/api/v1/write"
+      url: "http://172.16.204.87:30777/api/v1/write"
       data-format: "prometheusremotewrite"
