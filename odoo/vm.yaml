@@ -3,7 +3,7 @@
 apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachine
 metadata:
-  name: harbor
+  name: odoo
   namespace: default
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
