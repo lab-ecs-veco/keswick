@@ -27,7 +27,6 @@ spec:
     transport: CloudInit
 
 ---
----
 apiVersion: v1
 kind: ConfigMap
 metadata:
