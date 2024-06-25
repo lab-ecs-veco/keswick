@@ -66,7 +66,7 @@ data:
         cat <<EOF > /home/ubuntu/tensor.py
         import tensorflow as tf
 	print(tf.__version__)
-	mnist = tf.keras.datasets.fashion_mnist
+        mnist = tf.keras.datasets.fashion_mnist
 	(training_images, training_labels), (test_images, test_labels) = mnist.load_data()
 	import matplotlib.pyplot as plt
 	plt.imshow(training_images[0])
