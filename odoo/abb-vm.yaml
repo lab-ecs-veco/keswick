@@ -8,7 +8,7 @@ metadata:
 spec:
   className: my-vm-class-1
   #imageName: cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.ova
-  imageName: http://10.221.124.112/ssc600_disk.ova
+  imageName: 10.221.124.112/ssc600_disk.ova
   powerState: poweredOn
   networkInterfaces:
     - networkName: "VM Network"
