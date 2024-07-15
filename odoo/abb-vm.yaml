@@ -1,0 +1,35 @@
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachine
+metadata:
+  name: AAB_SSC600
+  namespace: default
+  annotations:
+    vmoperator.vmware.com/image-supported-check: disable
+spec:
+  className: my-vm-class-1
+  #imageName: cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.ova
+  imageName: http://10.221.124.112/ssc600_disk.ova
+  powerState: poweredOn
+  networkInterfaces:
+    - networkName: "VM Network"
+      ethernetCardType: "vmxnet3"
+  #vmMetadata:
+  #  configMapName: user-data-ubuntu
+  #  transport: CloudInit
+
+---
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachineClass
+metadata:
+  name: my-vm-class-1
+spec:
+  hardware:
+    cpus: 2
+    memory: 4Gi
+  policies:
+    resources:
+      requests:
+        cpu: 2
+        memory: 4Gi
+  configSpec:
+    sched.cpu.latencySensitivity: high
