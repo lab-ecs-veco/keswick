@@ -1,0 +1,27 @@
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachine
+metadata:
+  name: windows-vm
+  namespace: default
+  annotations:
+    vmoperator.vmware.com/image-supported-check: disable
+spec:
+  className: my-vm-class-2
+  imageName: 10.221.124.112/Windows-testVm.ova
+  powerState: poweredOn
+  networkInterfaces:
+    - networkName: "VM Network"
+      ethernetCardType: "vmxnet3"
+    - networkName: "VM Network"
+      ethernetCardType: "vmxnet3"
+
+
+---
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachineClass
+metadata:
+  name: my-vm-class-2
+spec:
+  hardware:
+    cpus: 4
+    memory: 16Gi
