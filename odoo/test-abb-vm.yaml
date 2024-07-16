@@ -8,7 +8,7 @@ metadata:
 spec:
   className: my-vm-class-1
   imageName: 10.221.124.112/ssc600_disk.ova
-  powerState: poweredOn
+  powerState: poweredOff
   networkInterfaces:
     - networkName: "VM Network"
       ethernetCardType: "vmxnet3"
