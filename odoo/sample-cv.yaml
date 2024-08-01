@@ -36,4 +36,4 @@ spec:
     app: sample-app
   ports:
     - port: 80
-      nodePort: 30899
+      nodePort: 30819
