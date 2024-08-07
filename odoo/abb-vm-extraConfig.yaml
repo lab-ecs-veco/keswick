@@ -13,7 +13,6 @@ spec:
     - networkName: "VM Network"
       ethernetCardType: "vmxnet3"
 
-
 ---
 apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachineClass
