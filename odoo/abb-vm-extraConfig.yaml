@@ -33,6 +33,6 @@ spec:
       _typeName: LatencySensitivity 
       level: high
     extraConfig:
-      _typeName: OptionValue
-      - key: sched.mem.lpage.enable1GPage
+      - _typeName: OptionValue
+        key: sched.mem.lpage.enable1GPage
         value: true
