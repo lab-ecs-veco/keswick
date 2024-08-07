@@ -33,6 +33,6 @@ spec:
     latencySensitivity:
       _typeName: LatencySensitivity 
       level: high
-    extraConfig:
-      - key: sched.mem.lpage.enable1GPage
-        value: true  
+    flags:
+      _typeName: VirtualMachineFlagInfo
+      enableLogging: false
