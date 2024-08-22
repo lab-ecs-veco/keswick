@@ -29,11 +29,13 @@ spec:
         memory: 8Gi
   configSpec:
     _typeName: VirtualMachineConfigSpec
-    ExtraConfig:
-      OptionValue{Key: "sched.mem.lpage.enable1GPage", Value: "true"}
     latencySensitivity:
       _typeName: LatencySensitivity 
       level: high
+    extraConfig:
+      _typeName: OptionValue
+      key: sched.mem.lpage.enable1GPage
+      value: true
     flags:
       _typeName: VirtualMachineFlagInfo
       enableLogging: false
