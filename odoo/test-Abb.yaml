@@ -12,8 +12,28 @@ spec:
   networkInterfaces:
     - networkName: "VM Network"
       ethernetCardType: "vmxnet3"
-  config:
-    extraConfig:
-      - key: "sched.mem.lpage.enable1GPage"
-        value: "true"
 
+---
+apiVersion: vmoperator.vmware.com/v1alpha1
+kind: VirtualMachineClass
+metadata:
+  name: my-vm-class-1
+spec:
+  hardware:
+    cpus: 4
+    memory: 8Gi
+  policies:
+    resources:
+      requests:
+        cpu: 4
+        memory: 8Gi
+  configSpec:
+    _typeName: VirtualMachineConfigSpec
+    ExtraConfig:
+      OptionValue{Key: "sched.mem.lpage.enable1GPage", Value: "true"}
+    latencySensitivity:
+      _typeName: LatencySensitivity 
+      level: high
+    flags:
+      _typeName: VirtualMachineFlagInfo
+      enableLogging: false
