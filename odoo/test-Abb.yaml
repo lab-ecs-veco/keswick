@@ -33,7 +33,7 @@ spec:
       _typeName: LatencySensitivity 
       level: high
     extraConfig:
-      _typeName: BaseOptionValue
+      _typeName: OptionValue
       sched.mem.lpage.enable1GPage: true
     flags:
       _typeName: VirtualMachineFlagInfo
