@@ -32,9 +32,19 @@ spec:
     latencySensitivity:
       _typeName: LatencySensitivity 
       level: high
-    extraConfig:
-      _typeName: OptionValue
-      sched.mem.lpage.enable1GPage: true
     flags:
       _typeName: VirtualMachineFlagInfo
       enableLogging: false
+    extraConfig:
+      - _typeName: OptionValue
+        key: "sched.mem.lpage.enable1GPage"
+        value: "true"
+      - _typeName: OptionValue
+        key: "sched.cpu.affinity.exclusiveNoStats"
+        value: "true" 
+      - _typeName: OptionValue
+        key: "monitor.forceEnableMPTI"
+        value: "true"
+      - _typeName: OptionValue
+        key: "timeTracker.lowLatency"
+        value: "true"  
