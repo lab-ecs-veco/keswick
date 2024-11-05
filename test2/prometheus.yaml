@@ -66,7 +66,8 @@ spec:
       serviceAccountName: prometheus
       containers:
       - name: prometheus
-        image: public.ecr.aws/n5b2p5h6/ecs-docker-local/ecs-local-dev:1.17.5
+        #image: public.ecr.aws/n5b2p5h6/ecs-docker-local/ecs-local-dev:1.17.5
+        image: prom/prometheus
         args:
         - '--web.enable-remote-write-receiver'
         - '--config.file=/etc/prometheus/prometheus.yml'
