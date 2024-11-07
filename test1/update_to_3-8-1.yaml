@@ -1,7 +1,0 @@
-apiVersion: ecs.vmware.com/v1alpha1
-kind: ECSRelease
-metadata:
-  name: ecs-release
-  namespace: flux-system
-spec:
-  version: "3.8.1-329238"
