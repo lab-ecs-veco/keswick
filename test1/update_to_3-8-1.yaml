@@ -4,4 +4,4 @@ metadata:
   name: ecs-release
   namespace: flux-system
 spec:
-  version: "3.8.0-239409"
+  version: "3.8.1-329238"
